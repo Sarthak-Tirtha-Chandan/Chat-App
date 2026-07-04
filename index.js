@@ -13,7 +13,7 @@ io.on('connection' , (socket) => {
     })
 })
 
-app.use(express.static(path.resolve('./Public')))
+app.use(express.static(path.join(__dirname, "Public")));
 
 app.get('/' , (req,res) => {
     return res.sendFile('/Public/index.html')

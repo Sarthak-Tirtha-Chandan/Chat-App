@@ -24,30 +24,29 @@
   <body>
     <div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-slate-800">
       <section class="flex min-h-screen flex-col bg-white">
-          <header class="border-b border-slate-200 bg-gradient-to-r from-brand-500 via-indigo-600 to-purple-700 px-6 py-4 text-white">
-            <h1 class="text-lg font-semibold">Chat</h1>
-            <p class="text-sm text-blue-100">Connect with your friends</p>
-          </header>
+        <header class="border-b border-slate-200 bg-gradient-to-r from-brand-500 via-indigo-600 to-purple-700 px-6 py-4 text-white">
+          <h1 class="text-lg font-semibold">Chat</h1>
+          <p class="text-sm text-blue-100">Connect with your friends</p>
+        </header>
 
-          <div id="messages" class="flex-1 overflow-y-auto bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-4 sm:p-6"></div>
+        <div id="messages" class="flex-1 overflow-y-auto bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 p-4 sm:p-6"></div>
 
-          <form id="chat-form" class="flex gap-2 border-t border-slate-200 bg-white p-4 sm:p-6">
-            <input
-              type="text"
-              id="msg"
-              placeholder="Type a message..."
-              class="flex-1 rounded-full border border-slate-300 px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
-            />
-            <button
-              id="send"
-              type="submit"
-              class="rounded-full bg-gradient-to-r from-brand-500 via-indigo-600 to-purple-700 px-4 py-3 text-sm font-semibold text-white"
-            >
-              Send
-            </button>
-          </form>
-        </section>
-      </div>
+        <form id="chat-form" class="sticky bottom-0 flex gap-2 border-t border-slate-200 bg-white p-4 sm:p-6">
+          <input
+            type="text"
+            id="msg"
+            placeholder="Type a message..."
+            class="flex-1 rounded-full border border-slate-300 px-4 py-3 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+          />
+          <button
+            id="send"
+            type="submit"
+            class="rounded-full bg-gradient-to-r from-brand-500 via-indigo-600 to-purple-700 px-4 py-3 text-sm font-semibold text-white"
+          >
+            Send
+          </button>
+        </form>
+      </section>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
